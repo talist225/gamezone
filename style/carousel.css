@@ -7,6 +7,10 @@ body {
   );
 }
 
+.opacity {
+  opacity: 0.9;
+}
+
 :root {
   --gradient: linear-gradient(to left top, #4b5dff 10%, #ff2c02 90%) !important;
 }
