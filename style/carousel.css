@@ -1,0 +1,14 @@
+body {
+  background: linear-gradient(
+    to bottom,
+    rgba(252, 252, 8, 0.2),
+    rgba(0, 0, 255, 0.174)
+  );
+}
+
+.px-wide {
+  width: 500px;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}

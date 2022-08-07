@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWork 04.08.22</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="transperent">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html"
+            ><i class="bi bi-controller"></i> Game Zone</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carousel.html">Carousel</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <h2 class="text-center">Game Zone</h2>
+        <h4 class="text-center">Find the best games in 2022!</h4>
+
+        <!---------------------------------------------->
+        <div class="carousel-warpper text-center">
+          <div class="carousel" id="carouselDiv"></div>
+          <div class="carousel-btns">
+            <button class="btn btn-dark" onclick="previousCarouselImage()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="btn btn-dark" onclick="nextCarouselImage()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <!---------------------------------------------->
+        <hr>
+        <h3 class="text-center mt-5">View other games from 2022</h3>
+    
+        <!---------------------------------------------->
+        <div class="cardsDiv">
+          <div class="col-md-4">
+            <div class="card" style="width: 16rem">
+              <img
+                src="./assets/imgs/DyingLight.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Dying Light 2 Stay Human</h5>
+                <h6 class="card-subtitle mb-2 text-muted">4 Feb, 2022</h6>
+                <p class="card-text"><b>Price: </b>$59.99</p>
+                <a href="#" class="btn mr-2"
+                  ><i class="fas fa-link"></i> BUY NOW</a
+                >
+                <a href="#" class="btn"
+                  ><i class="fab fa-github"></i> WEBSITE</a
+                >
+              </div>
+            </div>
+          </div>
+          <!---------------------------------------------->
+          <div class="col-md-4">
+            <div class="card" style="width: 16rem">
+              <img
+                src="./assets/imgs/GodOfWarRagnarok.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">God Of War: <br>Ragnarok</h5>
+                <h6 class="card-subtitle mb-2 text-muted">9 Nov, 2022</h6>
+                <p class="card-text"><b>Price: </b>$59.99</p>
+                <a href="#" class="btn mr-2"
+                  ><i class="fas fa-link"></i> BUY NOW</a
+                >
+                <a href="#" class="btn"
+                  ><i class="fab fa-github"></i> WEBSITE</a
+                >
+              </div>
+            </div>
+          </div>
+           <!---------------------------------------------->
+           <div class="col-md-4">
+            <div class="card" style="width: 16rem">
+              <img
+                src="./assets/imgs/Ghostwire_Tokyo.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">GHostwire <br>Tokyo</h5>
+                <h6 class="card-subtitle mb-2 text-muted">25 Mar, 2022</h6>
+                <p class="card-text"><b>Price: </b>$59.99</p>
+                <a href="#" class="btn mr-2"
+                  ><i class="fas fa-link"></i> BUY NOW</a
+                >
+                <a href="#" class="btn"
+                  ><i class="fab fa-github"></i> WEBSITE</a
+                >
+              </div>
+            </div>
+          </div>
+        <!---------------------------------------------->
+        <div class="col-md-4">
+            <div class="card" style="width: 16rem">
+              <img
+                src="./assets/imgs/RainbowSix.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Rainbow Six: <br> Extraction</h5>
+                <h6 class="card-subtitle mb-2 text-muted">20 Jan, 2022</h6>
+                <p class="card-text"><b>Price: </b>$39.99-$59.99</p>
+                <a href="#" class="btn mr-2"
+                  ><i class="fas fa-link"></i> BUY NOW</a
+                >
+                <a href="#" class="btn"
+                  ><i class="fab fa-github"></i> WEBSITE</a
+                >
+              </div>
+            </div>
+          </div>
+        <!---------------------------------------------->
+                
+                
+                    <div class="col-md-4">
+                      <div class="card" style="width: 16rem">
+                        <img
+                          src="./assets/imgs/DyingLight.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Dying Light 2 Stay Human</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">4 Feb, 2022</h6>
+                          <p class="card-text"><b>Price: </b>$59.99</p>
+                          <a href="#" class="btn mr-2"
+                            ><i class="fas fa-link"></i> BUY NOW</a
+                          >
+                          <a href="#" class="btn"
+                            ><i class="fab fa-github"></i> WEBSITE</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!---------------------------------------------->
+                    <div class="col-md-4">
+                      <div class="card" style="width: 16rem">
+                        <img
+                          src="./assets/imgs/GodOfWarRagnarok.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body text-center">
+                          <h5 class="card-title">God Of War: <br>Ragnarok</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">9 Nov, 2022</h6>
+                          <p class="card-text"><b>Price: </b>$59.99</p>
+                          <a href="#" class="btn mr-2"
+                            ><i class="fas fa-link"></i> BUY NOW</a
+                          >
+                          <a href="#" class="btn"
+                            ><i class="fab fa-github"></i> WEBSITE</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                     <!---------------------------------------------->
+                     <div class="col-md-4">
+                      <div class="card" style="width: 16rem">
+                        <img
+                          src="./assets/imgs/Ghostwire_Tokyo.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body text-center">
+                          <h5 class="card-title">GHostwire <br>Tokyo</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">25 Mar, 2022</h6>
+                          <p class="card-text"><b>Price: </b>$59.99</p>
+                          <a href="#" class="btn mr-2"
+                            ><i class="fas fa-link"></i> BUY NOW</a
+                          >
+                          <a href="#" class="btn"
+                            ><i class="fab fa-github"></i> WEBSITE</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  <!---------------------------------------------->
+                  <div class="col-md-4">
+                      <div class="card" style="width: 16rem">
+                        <img
+                          src="./assets/imgs/RainbowSix.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Rainbow Six: <br> Extraction</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">20 Jan, 2022</h6>
+                          <p class="card-text"><b>Price: </b>$39.99-$59.99</p>
+                          <a href="#" class="btn mr-2"
+                            ><i class="fas fa-link"></i> BUY NOW</a
+                          >
+                          <a href="#" class="btn"
+                            ><i class="fab fa-github"></i> WEBSITE</a
+                          >
+                        </div>
+                      </div>
+                  
+             
+      </main>
+      <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+        <div class="container text-center">
+          <small>Copyright &copy; Tal Yaakov - Game Zone</small>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/models/topGames.model.js"></script>
+    <script src="./js/dataInitialization.js"></script>
+    <script src="./js/components/caruselaContainer.component.js"></script>
+    <script src="./js/components/cardsContainer.component.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
