@@ -52,76 +52,74 @@
               </li>
             </ul>
           </div>
-        </nav>
-        <!-- Button trigger modal -->
-        <div class="col-xs-12 text-end">
-          <button
-            type="button"
-            class="btn btn-primary pt-2 pb-2 pe-4 ps-4"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
+          <!-- Button trigger modal -->
+          <div class="col-xs-12 text-end">
+            <button
+              type="button"
+              class="btn btn-primary pt-2 pb-2 pe-4 ps-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Login
+            </button>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
           >
-            Login
-          </button>
-        </div>
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="staticBackdrop"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel"></h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <section class="login">
-                  <h1 class="title">Login</h1>
-                  <form class="contact-form row">
-                    <div class="form-field col-lg-12">
-                      <input
-                        id="email"
-                        class="input-text js-input"
-                        type="email"
-                        required
-                      />
-                      <label class="label" for="email">E-mail</label>
-                    </div>
-                    <div class="form-field col-lg-12">
-                      <input
-                        id="password"
-                        class="input-text js-input"
-                        type="password"
-                        required
-                      />
-                      <label class="label" for="email">Password</label>
-                    </div>
+            <div class="modal-dialog modal-sm opacity">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"></h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <section class="login">
+                    <h1 class="title">Login</h1>
+                    <form class="contact-form row">
+                      <div class="form-field col-lg-12">
+                        <input
+                          id="email"
+                          class="input-text js-input"
+                          type="email"
+                          required
+                        />
+                        <label class="label" for="email">E-mail</label>
+                      </div>
+                      <div class="form-field col-lg-12">
+                        <input
+                          id="password"
+                          class="input-text js-input"
+                          type="password"
+                          required
+                        />
+                        <label class="label" for="email">Password</label>
+                      </div>
 
-                    <div class="form-field col-lg-12 text-center">
-                      <input class="submit-btn" type="submit" value="Login" />
-                    </div>
-                    <div class="form-field col-lg-12 text-center">
-                      <button src="carousel.html" class="submit-btn">
-                        REGISTER
-                      </button>
-                    </div>
-                  </form>
-                </section>
+                      <div class="form-field col-lg-12 text-center">
+                        <input class="submit-btn" type="submit" value="Login" />
+                      </div>
+                      <div class="form-field col-lg-12 text-center">
+                        <button src="./carousel.html" class="submit-btn">
+                          REGISTER
+                        </button>
+                      </div>
+                    </form>
+                  </section>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </nav>
       </header>
       <main>
         <h2 class="text-center">Game Zone</h2>
