@@ -4,8 +4,8 @@ const initializeCarouselImages = () => {
   for (let topGameItem of topGameArr) {
     document.getElementById("carouselDiv").innerHTML += `
     <div class="d-none " id="carousel_img_${topGameItem.id}">
-    <div class="col" >
-     <div class="card" >
+    <div class="col">
+     <div class="card">
          <img src="${topGameItem.imgUrl}" class="card-img-top" alt="${topGameItem.title}" id="carousel_img_${topGameItem.id}>
          <div class="card-body">
            <h5 class="card-title">${topGameItem.title}</h5>
