@@ -8,6 +8,10 @@ body {
   );
 }
 
+.opacity {
+  opacity: 0.9;
+}
+
 .card {
   width: 30%;
 }
@@ -53,17 +57,17 @@ body {
 /* Login form*/
 
 .login {
-  max-width: 800px;
+  max-width: 200px;
   margin: 50px auto;
   position: relative;
 }
 .login .title {
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 3.2em;
+  letter-spacing: 4px;
+  font-size: 2.2em;
   line-height: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 10px;
   color: #5543ca;
   background: #5543ca;
   background: -moz-linear-gradient(left, #f4524d 0%, #5543ca 100%) !important;
@@ -79,7 +83,7 @@ body {
 
 .contact-form .form-field {
   position: relative;
-  margin: 32px 0;
+  margin: 10px 0;
 }
 .contact-form .input-text {
   display: block;
@@ -124,8 +128,4 @@ body {
   border: none;
   width: 200px;
   cursor: pointer;
-}
-
-.carousel {
-  transition: all 0.2s ease-in-out;
 }
