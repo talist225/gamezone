@@ -20,6 +20,34 @@ let topGameArr = [
     49.99,
     3
   ),
+  new TopGame(
+    "Dying Light 2 - Stay Human",
+    "4 Feb, 2022",
+    "./assets/imgs/DyingLight.jpg",
+    59.99,
+    4
+  ),
+  new TopGame(
+    "Good Of War - Ragnarok",
+    "9 Nov, 2022",
+    "./assets/imgs/GodOfWarRagnarok.jpg",
+    59.99,
+    5
+  ),
+  new TopGame(
+    "Ghostwire Tokyo",
+    "25 Mar, 2022",
+    "./assets/imgs/Ghostwire_Tokyo.jpg",
+    59.99,
+    6
+  ),
+  new TopGame(
+    "Rainbow Six: Extraction",
+    "20 Jan, 2022",
+    "./assets/imgs/RainbowSix.jpg",
+    59.99,
+    7
+  ),
 ];
 
 const cloneTopGameArr = _.cloneDeep(topGameArr);
