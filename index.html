@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomeWork 04.08.22</title>
     <link
+    rel="shortcut icon"
+    href="./assets/imgs/icon.png"
+    type="image/png"
+  />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
@@ -109,6 +114,10 @@
         <!---------------------------------------------->
         <div class="carousel-warpper text-center">
           <div class="carousel" id="carouselDiv"></div>
+              <!--List Container-->
+     
+      <div class="d-none mb-4" id="listContainer">
+      </div>
           <div class="carousel-btns">
             <button class="btn btn-dark" onclick="previousCarouselImage()">
               <i class="bi bi-arrow-left"></i>
@@ -118,10 +127,50 @@
             </button>
           </div>
         </div>
+     
+
+  
+      <!--Display Mode-->
+      <div class="displaybtn">
+        <div class="col-3 mb-3">
+         <button class="btn btn-primary" onclick="handleSelectModeClick(1)">
+         <i class="bi bi-image-fill"></i>
+         </button>
+         <button class="btn btn-primary" onclick="handleSelectModeClick(2)">
+        <i class="bi bi-list"></i>
+         </button>
+        <button class="btn btn-primary" onclick="handleSortClick('⬇️')">
+          <i class="bi bi-sort-down"></i>
+        </button>
+        <button class="btn btn-primary" onclick="handleSortClick('⬆️')">
+          <i class="bi bi-sort-up"></i>
+        </button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+          <i class="bi bi-funnel"></i>
+        </button>
+        <div style="min-height: 20px;">
+          <div class="collapse collapse-horizontal mt-2" id="collapseWidthExample">
+            <div class="card card-body" style="width: 300px;">
+              <input
+                type="text"
+                class="form-control bg-dark"
+                placeholder="Filter by name"
+                aria-label="Filter by name"
+                oninput="handleFilterByName(event)"
+                style="color: white; border: none"
+              />
+            </div>
+          </div>
+      </div>
+  
+    </div>
         <!---------------------------------------------->
-        <hr />
-        <h3 class="text-center mt-5">View other games from 2022</h3>
+   <hr />
+   <h3 class="text-center mt-5">View other games from 2022</h3>
         <!---------------------------------------------->
+
+
+
 <div class="row">
   <div class="col-md-3">
     <div class="card" style="width: 16rem">
@@ -185,6 +234,7 @@
       </div>
     </div>
   </div>
+
   <!---------------------------------------------->
 
 <div class="col-md-3">
@@ -295,6 +345,7 @@
             </div>
           </div>
         </div>
+     
         <!---------------------------------------------->
                 
         
@@ -310,10 +361,12 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.js"></script>
     <script src="./js/models/topGames.model.js"></script>
     <script src="./js/dataInitialization.js"></script>
     <script src="./js/components/caruselaContainer.component.js"></script>
     <script src="./js/components/cardsContainer.component.js"></script>
+    <script src="./js/components/listContainer.component.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
