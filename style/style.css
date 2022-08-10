@@ -173,7 +173,7 @@ nav {
 }
 
 #title {
-  font-size: 100px;
+  font-size: 50px;
 }
 #trav {
   -webkit-animation: blink 0.01s infinite alternate;
@@ -200,7 +200,7 @@ nav {
 }
 .neon-purple {
   font-family: "League Script", Helvetica, Arial, sans-serif;
-  font-size: 60px;
+  font-size: 30px;
   margin: 0 auto;
   text-align: center;
   color: #ccf;
@@ -317,4 +317,20 @@ nav {
     rgb(48, 49, 51),
     transparent
   );
+}
+
+.head h1 {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px, 0 0 50px;
+}
+.head span {
+  color: orange;
+}
+
+.head p {
+  font-size: 20px;
+}
+
+.head p span {
+  color: orange;
+  font-weight: bold;
 }
